@@ -1,0 +1,102 @@
+{
+    "title": "docker-test-pgbench",
+    "last_modified": "2024-04-18 13:35:09",
+    "description": "Docker testing on Ubuntu 20.04.4 LTS via the Phoronix Test Suite.",
+    "systems": {
+        "docker-test-pgbench": {
+            "identifier": "docker-test-pgbench",
+            "hardware": {
+                "Processor": "Intel Core i7-7500U @ 3.50GHz (2 Cores \/ 4 Threads)",
+                "Motherboard": "Dell 0YNG98 (1.27.0 BIOS)",
+                "Memory": "8GB",
+                "Disk": "500GB Samsung SSD 860",
+                "Graphics": "i915drmfb (1050MHz)",
+                "Audio": "Realtek ALC3253"
+            },
+            "software": {
+                "OS": "Ubuntu 20.04.4 LTS",
+                "Kernel": "5.4.0-176-generic (x86_64)",
+                "Compiler": "GCC 9.4.0",
+                "File-System": "overlayfs",
+                "Screen Resolution": "1920x1080",
+                "System Layer": "Docker"
+            },
+            "user": "root",
+            "timestamp": "2024-04-18 13:25:37",
+            "client_version": "10.8.3",
+            "data": {
+                "compiler-configuration": "--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-targets=nvptx-none=\/build\/gcc-9-9QDOt0\/gcc-9-9.4.0\/debian\/tmp-nvptx\/usr,hsa --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v",
+                "cpu-scaling-governor": "intel_pstate powersave (EPP: balance_performance)",
+                "cpu-microcode": "0xf4",
+                "kernel-extra-details": "Transparent Huge Pages: madvise",
+                "security": "gather_data_sampling: Mitigation of Microcode + itlb_multihit: KVM: Mitigation of Split huge pages + l1tf: Mitigation of PTE Inversion; VMX: conditional cache flushes SMT vulnerable + mds: Mitigation of Clear buffers; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable + retbleed: Mitigation of IBRS + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of IBRS IBPB: conditional STIBP: conditional RSB filling PBRSB-eIBRS: Not affected + srbds: Mitigation of Microcode + tsx_async_abort: Not affected"
+            }
+        }
+    },
+    "results": {
+        "0dcb941b4d2a9db5456d842c31b3165d52de0bc8": {
+            "identifier": "pts\/pgbench-1.11.1",
+            "title": "PostgreSQL pgbench",
+            "app_version": "14.0",
+            "arguments": "-s 100 -c 50 -S",
+            "description": "Scaling Factor: 100 - Clients: 50 - Mode: Read Only",
+            "scale": "TPS",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "docker-test-pgbench": {
+                    "value": 26772,
+                    "raw_values": [
+                        26287.49270500000056927092373371124267578125,
+                        26651.90827899999931105412542819976806640625,
+                        27377.88265899999896646477282047271728515625
+                    ],
+                    "test_run_times": [
+                        175.280000000000001136868377216160297393798828125,
+                        176.6100000000000136424205265939235687255859375,
+                        176.31999999999999317878973670303821563720703125
+                    ],
+                    "details": {
+                        "compiler-options": {
+                            "compiler-type": "CC",
+                            "compiler": "gcc",
+                            "compiler-options": "-fno-strict-aliasing -fwrapv -O2 -lpgcommon -lpgport -lpq -lpthread -lrt -ldl -lm"
+                        }
+                    }
+                }
+            }
+        },
+        "540ecec1a61d60c03dcd4936f060a91c5223909f": {
+            "identifier": "pts\/pgbench-1.11.1",
+            "title": "PostgreSQL pgbench",
+            "app_version": "14.0",
+            "arguments": "-s 100 -c 50 -S",
+            "description": "Scaling Factor: 100 - Clients: 50 - Mode: Read Only - Average Latency",
+            "scale": "ms",
+            "proportion": "LIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "docker-test-pgbench": {
+                    "value": 1.8680000000000001048050535246147774159908294677734375,
+                    "raw_values": [
+                        1.9019999999999999129585148693877272307872772216796875,
+                        1.875999999999999889865875957184471189975738525390625,
+                        1.826000000000000067501559897209517657756805419921875
+                    ],
+                    "test_run_times": [
+                        175.280000000000001136868377216160297393798828125,
+                        176.6100000000000136424205265939235687255859375,
+                        176.31999999999999317878973670303821563720703125
+                    ],
+                    "details": {
+                        "compiler-options": {
+                            "compiler-type": "CC",
+                            "compiler": "gcc",
+                            "compiler-options": "-fno-strict-aliasing -fwrapv -O2 -lpgcommon -lpgport -lpq -lpthread -lrt -ldl -lm"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

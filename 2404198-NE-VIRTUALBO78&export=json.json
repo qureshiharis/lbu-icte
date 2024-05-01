@@ -1,0 +1,60 @@
+{
+    "title": "virtualbox-test-systemdecompressgzip",
+    "last_modified": "2024-04-19 14:56:22",
+    "description": "Oracle VMware testing on Ubuntu 22.04 via the Phoronix Test Suite.",
+    "systems": {
+        "virtualbox-test-systemdecompressgzip": {
+            "identifier": "virtualbox-test-systemdecompressgzip",
+            "hardware": {
+                "Processor": "Intel Core i7-7500U (2 Cores)",
+                "Motherboard": "Oracle VirtualBox v1.2",
+                "Chipset": "Intel 440FX 82441FX PMC",
+                "Memory": "4096MB",
+                "Disk": "27GB VBOX HDD",
+                "Graphics": "VMware SVGA II",
+                "Audio": "Intel 82801AA AC 97 Audio",
+                "Network": "Intel 82540EM"
+            },
+            "software": {
+                "OS": "Ubuntu 22.04",
+                "Kernel": "6.5.0-18-generic (x86_64)",
+                "Desktop": "GNOME Shell 42.9",
+                "Display Server": "X Server 1.21.1.4",
+                "File-System": "overlayfs",
+                "Screen Resolution": "1280x800",
+                "System Layer": "Oracle VMware"
+            },
+            "user": "ubuntu",
+            "timestamp": "2024-04-19 14:52:38",
+            "client_version": "10.8.4",
+            "data": {
+                "kernel-extra-details": "Transparent Huge Pages: madvise",
+                "security": "gather_data_sampling: Unknown: Dependent on hypervisor status + itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Mitigation of Clear buffers; SMT Host state unknown + meltdown: Mitigation of PTI + mmio_stale_data: Mitigation of Clear buffers; SMT Host state unknown + retbleed: Vulnerable + spec_rstack_overflow: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Unknown: Dependent on hypervisor status + tsx_async_abort: Not affected"
+            }
+        }
+    },
+    "results": {
+        "f506d6523c8431dda8e4e0703b40efc360df331c": {
+            "identifier": "pts\/system-decompress-gzip-1.1.1",
+            "title": "System GZIP Decompression",
+            "scale": "Seconds",
+            "proportion": "LIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "virtualbox-test-systemdecompressgzip": {
+                    "value": 4.1440000000000001278976924368180334568023681640625,
+                    "raw_values": [
+                        4.13600000000000012079226507921703159809112548828125,
+                        4.14299999999999979394260662957094609737396240234375,
+                        4.153999999999999914734871708787977695465087890625
+                    ],
+                    "test_run_times": [
+                        4.13999999999999968025576890795491635799407958984375,
+                        4.13999999999999968025576890795491635799407958984375,
+                        4.1500000000000003552713678800500929355621337890625
+                    ]
+                }
+            }
+        }
+    }
+}

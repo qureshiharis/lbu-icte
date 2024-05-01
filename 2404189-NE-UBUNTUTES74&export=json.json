@@ -1,0 +1,319 @@
+{
+    "title": "ubuntu-test-intelmlc",
+    "last_modified": "2024-04-18 22:17:22",
+    "description": "Intel Core i7-7500U testing with a Dell 0YNG98 (1.27.0 BIOS) and Intel HD 620 KBL GT2 3GB on Ubuntu 20.04 via the Phoronix Test Suite.",
+    "systems": {
+        "ubuntu-test-intelmlc": {
+            "identifier": "ubuntu-test-intelmlc",
+            "hardware": {
+                "Processor": "Intel Core i7-7500U @ 3.50GHz (2 Cores \/ 4 Threads)",
+                "Motherboard": "Dell 0YNG98 (1.27.0 BIOS)",
+                "Chipset": "Intel Xeon E3-1200 v6\/7th",
+                "Memory": "8GB",
+                "Disk": "500GB Samsung SSD 860",
+                "Graphics": "Intel HD 620 KBL GT2 3GB (1050MHz)",
+                "Audio": "Realtek ALC3253",
+                "Network": "Intel 3165"
+            },
+            "software": {
+                "OS": "Ubuntu 20.04",
+                "Kernel": "5.4.0-176-generic (x86_64)",
+                "Desktop": "GNOME Shell 3.36.9",
+                "Display Server": "X Server 1.20.13",
+                "OpenGL": "4.6 Mesa 21.2.6",
+                "Vulkan": "1.2.182",
+                "Compiler": "GCC 9.4.0",
+                "File-System": "ext4",
+                "Screen Resolution": "1920x1080"
+            },
+            "user": "haris",
+            "timestamp": "2024-04-18 21:53:46",
+            "client_version": "10.8.4",
+            "data": {
+                "cpu-scaling-governor": "intel_pstate powersave (EPP: balance_performance)",
+                "cpu-microcode": "0xf4",
+                "cpu-thermald": "1.9.1",
+                "kernel-extra-details": "Transparent Huge Pages: madvise",
+                "environment-variables": "NVM_CD_FLAGS=",
+                "security": "gather_data_sampling: Mitigation of Microcode + itlb_multihit: KVM: Mitigation of Split huge pages + l1tf: Mitigation of PTE Inversion; VMX: conditional cache flushes SMT vulnerable + mds: Mitigation of Clear buffers; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable + retbleed: Mitigation of IBRS + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of IBRS IBPB: conditional STIBP: conditional RSB filling PBRSB-eIBRS: Not affected + srbds: Mitigation of Microcode + tsx_async_abort: Not affected"
+            }
+        }
+    },
+    "results": {
+        "df1dc9cb94aa7c0d5b1cc9fa28ad25bced291a16": {
+            "identifier": "pts\/intel-mlc-1.1.0",
+            "title": "Intel Memory Latency Checker",
+            "app_version": "3.10",
+            "arguments": "--idle_latency",
+            "description": "Test: Idle Latency",
+            "scale": "ns",
+            "proportion": "LIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "ubuntu-test-intelmlc": {
+                    "value": 85.2999999999999971578290569595992565155029296875,
+                    "raw_values": [
+                        85,
+                        85.7000000000000028421709430404007434844970703125,
+                        85.2000000000000028421709430404007434844970703125
+                    ],
+                    "test_run_times": [
+                        4.70999999999999996447286321199499070644378662109375,
+                        4.7400000000000002131628207280300557613372802734375,
+                        4.71999999999999975131004248396493494510650634765625
+                    ]
+                }
+            }
+        },
+        "573d3ee36ed6304a88823eca86cd97745269ca25": {
+            "identifier": "pts\/intel-mlc-1.1.0",
+            "title": "Intel Memory Latency Checker",
+            "app_version": "3.10",
+            "arguments": "-X --max_bandwidth",
+            "description": "Test: Max Bandwidth - All Reads",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "ubuntu-test-intelmlc": {
+                    "value": 15167.649999999999636202119290828704833984375,
+                    "raw_values": [
+                        15064.15999999999985448084771633148193359375,
+                        15202.940000000000509317032992839813232421875,
+                        15235.850000000000363797880709171295166015625
+                    ],
+                    "test_run_times": [
+                        142.3899999999999863575794734060764312744140625,
+                        142.400000000000005684341886080801486968994140625,
+                        142.409999999999996589394868351519107818603515625
+                    ]
+                }
+            }
+        },
+        "f173385c560a297b8a3e37ce7a447fad720a2396": {
+            "identifier": "pts\/intel-mlc-1.1.0",
+            "title": "Intel Memory Latency Checker",
+            "app_version": "3.10",
+            "arguments": "-X --max_bandwidth",
+            "description": "Test: Max Bandwidth - 3:1 Reads-Writes",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "ubuntu-test-intelmlc": {
+                    "value": 14139.559999999999490682967007160186767578125,
+                    "raw_values": [
+                        14139.850000000000363797880709171295166015625,
+                        14136.030000000000654836185276508331298828125,
+                        14142.809999999999490682967007160186767578125
+                    ],
+                    "test_run_times": [
+                        142.3899999999999863575794734060764312744140625,
+                        142.400000000000005684341886080801486968994140625,
+                        142.409999999999996589394868351519107818603515625
+                    ]
+                }
+            }
+        },
+        "ea29c4ca05648f5f4be8b3dc1dd2fbfc2d546b37": {
+            "identifier": "pts\/intel-mlc-1.1.0",
+            "title": "Intel Memory Latency Checker",
+            "app_version": "3.10",
+            "arguments": "-X --max_bandwidth",
+            "description": "Test: Max Bandwidth - 2:1 Reads-Writes",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "ubuntu-test-intelmlc": {
+                    "value": 13756.52000000000043655745685100555419921875,
+                    "raw_values": [
+                        13753.9599999999991268850862979888916015625,
+                        13755.579999999999927240423858165740966796875,
+                        13760.030000000000654836185276508331298828125
+                    ],
+                    "test_run_times": [
+                        142.3899999999999863575794734060764312744140625,
+                        142.400000000000005684341886080801486968994140625,
+                        142.409999999999996589394868351519107818603515625
+                    ]
+                }
+            }
+        },
+        "123e22a54800250ba57d392827728be279721bc8": {
+            "identifier": "pts\/intel-mlc-1.1.0",
+            "title": "Intel Memory Latency Checker",
+            "app_version": "3.10",
+            "arguments": "-X --max_bandwidth",
+            "description": "Test: Max Bandwidth - 1:1 Reads-Writes",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "ubuntu-test-intelmlc": {
+                    "value": 13002.370000000000800355337560176849365234375,
+                    "raw_values": [
+                        13002.489999999999781721271574497222900390625,
+                        13007.59000000000014551915228366851806640625,
+                        12997.02000000000043655745685100555419921875
+                    ],
+                    "test_run_times": [
+                        142.3899999999999863575794734060764312744140625,
+                        142.400000000000005684341886080801486968994140625,
+                        142.409999999999996589394868351519107818603515625
+                    ]
+                }
+            }
+        },
+        "7480b4b102224c3759ccaa55dea552192d81a0d1": {
+            "identifier": "pts\/intel-mlc-1.1.0",
+            "title": "Intel Memory Latency Checker",
+            "app_version": "3.10",
+            "arguments": "-X --max_bandwidth",
+            "description": "Test: Max Bandwidth - Stream-Triad Like",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "ubuntu-test-intelmlc": {
+                    "value": 13817.030000000000654836185276508331298828125,
+                    "raw_values": [
+                        13805.02000000000043655745685100555419921875,
+                        13826.6800000000002910383045673370361328125,
+                        13819.399999999999636202119290828704833984375
+                    ],
+                    "test_run_times": [
+                        142.3899999999999863575794734060764312744140625,
+                        142.400000000000005684341886080801486968994140625,
+                        142.409999999999996589394868351519107818603515625
+                    ]
+                }
+            }
+        },
+        "c37b1441436a672e0e92ee9bfcb636ec71e64055": {
+            "identifier": "pts\/intel-mlc-1.1.0",
+            "title": "Intel Memory Latency Checker",
+            "app_version": "3.10",
+            "arguments": "-X --peak_injection_bandwidth",
+            "description": "Test: Peak Injection Bandwidth - All Reads",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "ubuntu-test-intelmlc": {
+                    "value": 14939.899999999999636202119290828704833984375,
+                    "raw_values": [
+                        15081.79999999999927240423858165740966796875,
+                        14643.899999999999636202119290828704833984375,
+                        15094
+                    ],
+                    "test_run_times": [
+                        22.019999999999999573674358543939888477325439453125,
+                        22.030000000000001136868377216160297393798828125,
+                        22.030000000000001136868377216160297393798828125
+                    ]
+                }
+            }
+        },
+        "b8397ab7fe6bbf5b8f44d32d85bfe125860a5c23": {
+            "identifier": "pts\/intel-mlc-1.1.0",
+            "title": "Intel Memory Latency Checker",
+            "app_version": "3.10",
+            "arguments": "-X --peak_injection_bandwidth",
+            "description": "Test: Peak Injection Bandwidth - 3:1 Reads-Writes",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "ubuntu-test-intelmlc": {
+                    "value": 14064.20000000000072759576141834259033203125,
+                    "raw_values": [
+                        14050.600000000000363797880709171295166015625,
+                        14069.100000000000363797880709171295166015625,
+                        14072.899999999999636202119290828704833984375
+                    ],
+                    "test_run_times": [
+                        22.019999999999999573674358543939888477325439453125,
+                        22.030000000000001136868377216160297393798828125,
+                        22.030000000000001136868377216160297393798828125
+                    ]
+                }
+            }
+        },
+        "f112e78a544f725a64c7a5e01ba817a1412637d4": {
+            "identifier": "pts\/intel-mlc-1.1.0",
+            "title": "Intel Memory Latency Checker",
+            "app_version": "3.10",
+            "arguments": "-X --peak_injection_bandwidth",
+            "description": "Test: Peak Injection Bandwidth - 2:1 Reads-Writes",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "ubuntu-test-intelmlc": {
+                    "value": 13734.5,
+                    "raw_values": [
+                        13760.899999999999636202119290828704833984375,
+                        13695.5,
+                        13747
+                    ],
+                    "test_run_times": [
+                        22.019999999999999573674358543939888477325439453125,
+                        22.030000000000001136868377216160297393798828125,
+                        22.030000000000001136868377216160297393798828125
+                    ]
+                }
+            }
+        },
+        "1c6d826aa453f01a84d9edacc2e8838c3d503f77": {
+            "identifier": "pts\/intel-mlc-1.1.0",
+            "title": "Intel Memory Latency Checker",
+            "app_version": "3.10",
+            "arguments": "-X --peak_injection_bandwidth",
+            "description": "Test: Peak Injection Bandwidth - 1:1 Reads-Writes",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "ubuntu-test-intelmlc": {
+                    "value": 12987.399999999999636202119290828704833984375,
+                    "raw_values": [
+                        12991.600000000000363797880709171295166015625,
+                        12985.899999999999636202119290828704833984375,
+                        12984.600000000000363797880709171295166015625
+                    ],
+                    "test_run_times": [
+                        22.019999999999999573674358543939888477325439453125,
+                        22.030000000000001136868377216160297393798828125,
+                        22.030000000000001136868377216160297393798828125
+                    ]
+                }
+            }
+        },
+        "96e32b4018b1d413d6cae35aaa497d0d904e2639": {
+            "identifier": "pts\/intel-mlc-1.1.0",
+            "title": "Intel Memory Latency Checker",
+            "app_version": "3.10",
+            "arguments": "-X --peak_injection_bandwidth",
+            "description": "Test: Peak Injection Bandwidth - Stream-Triad Like",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "ubuntu-test-intelmlc": {
+                    "value": 13672.5,
+                    "raw_values": [
+                        13686.399999999999636202119290828704833984375,
+                        13650,
+                        13681.100000000000363797880709171295166015625
+                    ],
+                    "test_run_times": [
+                        22.019999999999999573674358543939888477325439453125,
+                        22.030000000000001136868377216160297393798828125,
+                        22.030000000000001136868377216160297393798828125
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "title": "docker-test-systemdecompressgzip",
+    "last_modified": "2024-04-18 18:16:15",
+    "description": "Docker testing on Ubuntu 20.04.4 LTS via the Phoronix Test Suite.",
+    "systems": {
+        "docker-test-systemdecompressgzip": {
+            "identifier": "docker-test-systemdecompressgzip",
+            "hardware": {
+                "Processor": "Intel Core i7-7500U @ 3.50GHz (2 Cores \/ 4 Threads)",
+                "Motherboard": "Dell 0YNG98 (1.27.0 BIOS)",
+                "Memory": "8GB",
+                "Disk": "500GB Samsung SSD 860",
+                "Graphics": "i915drmfb (1050MHz)",
+                "Audio": "Realtek ALC3253"
+            },
+            "software": {
+                "OS": "Ubuntu 20.04.4 LTS",
+                "Kernel": "5.4.0-176-generic (x86_64)",
+                "File-System": "overlayfs",
+                "Screen Resolution": "1920x1080",
+                "System Layer": "Docker"
+            },
+            "user": "root",
+            "timestamp": "2024-04-18 18:15:38",
+            "client_version": "10.8.3",
+            "data": {
+                "cpu-scaling-governor": "intel_pstate powersave (EPP: balance_performance)",
+                "cpu-microcode": "0xf4",
+                "kernel-extra-details": "Transparent Huge Pages: madvise",
+                "security": "gather_data_sampling: Mitigation of Microcode + itlb_multihit: KVM: Mitigation of Split huge pages + l1tf: Mitigation of PTE Inversion; VMX: conditional cache flushes SMT vulnerable + mds: Mitigation of Clear buffers; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable + retbleed: Mitigation of IBRS + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of IBRS IBPB: conditional STIBP: conditional RSB filling PBRSB-eIBRS: Not affected + srbds: Mitigation of Microcode + tsx_async_abort: Not affected"
+            }
+        }
+    },
+    "results": {
+        "f506d6523c8431dda8e4e0703b40efc360df331c": {
+            "identifier": "pts\/system-decompress-gzip-1.1.1",
+            "title": "System GZIP Decompression",
+            "scale": "Seconds",
+            "proportion": "LIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "docker-test-systemdecompressgzip": {
+                    "value": 4.91500000000000003552713678800500929355621337890625,
+                    "raw_values": [
+                        4.93400000000000016342482922482304275035858154296875,
+                        4.90899999999999980815346134477294981479644775390625,
+                        4.90299999999999958077978590154089033603668212890625
+                    ],
+                    "test_run_times": [
+                        4.92999999999999971578290569595992565155029296875,
+                        4.910000000000000142108547152020037174224853515625,
+                        4.9000000000000003552713678800500929355621337890625
+                    ]
+                }
+            }
+        }
+    }
+}

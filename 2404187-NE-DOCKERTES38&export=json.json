@@ -1,0 +1,64 @@
+{
+    "title": "docker-test-unpacklinux",
+    "last_modified": "2024-04-18 22:01:20",
+    "description": "Docker testing on Ubuntu 20.04.4 LTS via the Phoronix Test Suite.",
+    "systems": {
+        "docker-test-unpacklinux": {
+            "identifier": "docker-test-unpacklinux",
+            "hardware": {
+                "Processor": "Intel Core i7-7500U @ 3.50GHz (2 Cores \/ 4 Threads)",
+                "Motherboard": "Dell 0YNG98 (1.27.0 BIOS)",
+                "Memory": "8GB",
+                "Disk": "500GB Samsung SSD 860",
+                "Graphics": "i915drmfb (1050MHz)",
+                "Audio": "Realtek ALC3253"
+            },
+            "software": {
+                "OS": "Ubuntu 20.04.4 LTS",
+                "Kernel": "5.4.0-176-generic (x86_64)",
+                "Compiler": "GCC 9.4.0",
+                "File-System": "overlayfs",
+                "Screen Resolution": "1920x1080",
+                "System Layer": "Docker"
+            },
+            "user": "root",
+            "timestamp": "2024-04-18 21:59:45",
+            "client_version": "10.8.3",
+            "data": {
+                "disk-scheduler": "MQ-DEADLINE",
+                "cpu-scaling-governor": "intel_pstate powersave (EPP: balance_performance)",
+                "cpu-microcode": "0xf4",
+                "kernel-extra-details": "Transparent Huge Pages: madvise",
+                "security": "gather_data_sampling: Mitigation of Microcode + itlb_multihit: KVM: Mitigation of Split huge pages + l1tf: Mitigation of PTE Inversion; VMX: conditional cache flushes SMT vulnerable + mds: Mitigation of Clear buffers; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable + retbleed: Mitigation of IBRS + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of IBRS IBPB: conditional STIBP: conditional RSB filling PBRSB-eIBRS: Not affected + srbds: Mitigation of Microcode + tsx_async_abort: Not affected"
+            }
+        }
+    },
+    "results": {
+        "4aeeef0c03d9ac8f35fdf1c10745d11a5c0bfe75": {
+            "identifier": "pts\/unpack-linux-1.2.0",
+            "title": "Unpacking The Linux Kernel",
+            "app_version": "5.19",
+            "description": "linux-5.19.tar.xz",
+            "scale": "Seconds",
+            "proportion": "LIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "docker-test-unpacklinux": {
+                    "value": 13.1869999999999993889332472463138401508331298828125,
+                    "raw_values": [
+                        13.5950000000000006394884621840901672840118408203125,
+                        12.93599999999999994315658113919198513031005859375,
+                        13.26200000000000045474735088646411895751953125,
+                        12.952999999999999403144101961515843868255615234375
+                    ],
+                    "test_run_times": [
+                        13.5999999999999996447286321199499070644378662109375,
+                        12.9399999999999995026200849679298698902130126953125,
+                        13.2599999999999997868371792719699442386627197265625,
+                        12.949999999999999289457264239899814128875732421875
+                    ]
+                }
+            }
+        }
+    }
+}

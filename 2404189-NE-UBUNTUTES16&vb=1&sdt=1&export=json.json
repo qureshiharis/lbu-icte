@@ -1,0 +1,66 @@
+{
+    "title": "ubuntu-test-systemdecompressgzip",
+    "last_modified": "2024-04-18 19:12:38",
+    "description": "Intel Core i7-7500U testing with a Dell 0YNG98 (1.27.0 BIOS) and Intel HD 620 KBL GT2 3GB on Ubuntu 20.04 via the Phoronix Test Suite.",
+    "systems": {
+        "ubuntu-test-systemdecompressgzip": {
+            "identifier": "ubuntu-test-systemdecompressgzip",
+            "hardware": {
+                "Processor": "Intel Core i7-7500U @ 3.50GHz (2 Cores \/ 4 Threads)",
+                "Motherboard": "Dell 0YNG98 (1.27.0 BIOS)",
+                "Chipset": "Intel Xeon E3-1200 v6\/7th",
+                "Memory": "8GB",
+                "Disk": "500GB Samsung SSD 860",
+                "Graphics": "Intel HD 620 KBL GT2 3GB (1050MHz)",
+                "Audio": "Realtek ALC3253",
+                "Network": "Intel 3165"
+            },
+            "software": {
+                "OS": "Ubuntu 20.04",
+                "Kernel": "5.4.0-176-generic (x86_64)",
+                "Desktop": "GNOME Shell 3.36.9",
+                "Display Server": "X Server 1.20.13",
+                "OpenGL": "4.6 Mesa 21.2.6",
+                "Vulkan": "1.2.182",
+                "Compiler": "GCC 9.4.0",
+                "File-System": "ext4",
+                "Screen Resolution": "1920x1080"
+            },
+            "user": "haris",
+            "timestamp": "2024-04-18 19:11:13",
+            "client_version": "10.8.4",
+            "data": {
+                "cpu-scaling-governor": "intel_pstate powersave (EPP: balance_performance)",
+                "cpu-microcode": "0xf4",
+                "cpu-thermald": "1.9.1",
+                "kernel-extra-details": "Transparent Huge Pages: madvise",
+                "environment-variables": "NVM_CD_FLAGS=",
+                "security": "gather_data_sampling: Mitigation of Microcode + itlb_multihit: KVM: Mitigation of Split huge pages + l1tf: Mitigation of PTE Inversion; VMX: conditional cache flushes SMT vulnerable + mds: Mitigation of Clear buffers; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable + retbleed: Mitigation of IBRS + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of IBRS IBPB: conditional STIBP: conditional RSB filling PBRSB-eIBRS: Not affected + srbds: Mitigation of Microcode + tsx_async_abort: Not affected"
+            }
+        }
+    },
+    "results": {
+        "f506d6523c8431dda8e4e0703b40efc360df331c": {
+            "identifier": "pts\/system-decompress-gzip-1.1.1",
+            "title": "System GZIP Decompression",
+            "scale": "Seconds",
+            "proportion": "LIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "ubuntu-test-systemdecompressgzip": {
+                    "value": 4.61399999999999987920773492078296840190887451171875,
+                    "raw_values": [
+                        4.6150000000000002131628207280300557613372802734375,
+                        4.6029999999999997584154698415659368038177490234375,
+                        4.62399999999999966604491419275291264057159423828125
+                    ],
+                    "test_run_times": [
+                        4.61000000000000031974423109204508364200592041015625,
+                        4.5999999999999996447286321199499070644378662109375,
+                        4.62000000000000010658141036401502788066864013671875
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,99 @@
+{
+    "title": "virtualbox-test-unpacklinux",
+    "last_modified": "2024-04-19 17:37:41",
+    "description": "Oracle VMware testing on Ubuntu 22.04 via the Phoronix Test Suite.",
+    "systems": {
+        "virtualbox-test-unpacklinux": {
+            "identifier": "virtualbox-test-unpacklinux",
+            "hardware": {
+                "Processor": "Intel Core i7-7500U (2 Cores)",
+                "Motherboard": "Oracle VirtualBox v1.2",
+                "Chipset": "Intel 440FX 82441FX PMC",
+                "Memory": "4096MB",
+                "Disk": "27GB VBOX HDD",
+                "Graphics": "VMware SVGA II",
+                "Audio": "Intel 82801AA AC 97 Audio",
+                "Network": "Intel 82540EM"
+            },
+            "software": {
+                "OS": "Ubuntu 22.04",
+                "Kernel": "6.5.0-18-generic (x86_64)",
+                "Desktop": "GNOME Shell 42.9",
+                "Display Server": "X Server 1.21.1.4",
+                "File-System": "overlayfs",
+                "Screen Resolution": "1280x800",
+                "System Layer": "Oracle VMware"
+            },
+            "user": "ubuntu",
+            "timestamp": "2024-04-19 17:24:24",
+            "client_version": "10.8.4",
+            "data": {
+                "disk-scheduler": "MQ-DEADLINE",
+                "disk-mount-options": "lowerdir=\/filesystem.squashfs,nouserxattr,relatime,rw,upperdir=\/cow\/upper,workdir=\/cow\/work,xino=off",
+                "disk-details": "Block Size: 4096",
+                "kernel-extra-details": "Transparent Huge Pages: madvise",
+                "security": "gather_data_sampling: Unknown: Dependent on hypervisor status + itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Mitigation of Clear buffers; SMT Host state unknown + meltdown: Mitigation of PTI + mmio_stale_data: Mitigation of Clear buffers; SMT Host state unknown + retbleed: Vulnerable + spec_rstack_overflow: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Unknown: Dependent on hypervisor status + tsx_async_abort: Not affected"
+            }
+        }
+    },
+    "results": {
+        "4aeeef0c03d9ac8f35fdf1c10745d11a5c0bfe75": {
+            "identifier": "pts\/unpack-linux-1.2.0",
+            "title": "Unpacking The Linux Kernel",
+            "app_version": "5.19",
+            "description": "linux-5.19.tar.xz",
+            "scale": "Seconds",
+            "proportion": "LIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "virtualbox-test-unpacklinux": {
+                    "value": 14.114000000000000767386154620908200740814208984375,
+                    "raw_values": [
+                        11.702999999999999403144101961515843868255615234375,
+                        13.135999999999999232613845379091799259185791015625,
+                        14.0950000000000006394884621840901672840118408203125,
+                        14.3840000000000003410605131648480892181396484375,
+                        14.291000000000000369482222595252096652984619140625,
+                        14.45700000000000073896444519050419330596923828125,
+                        14.425000000000000710542735760100185871124267578125,
+                        14.452999999999999403144101961515843868255615234375,
+                        14.2829999999999994741983755375258624553680419921875,
+                        14.26200000000000045474735088646411895751953125,
+                        14.1500000000000003552713678800500929355621337890625,
+                        14.2810000000000005826450433232821524143218994140625,
+                        14.5969999999999995310417943983338773250579833984375,
+                        14.07600000000000051159076974727213382720947265625,
+                        14.6530000000000004689582056016661226749420166015625,
+                        14.0129999999999999005240169935859739780426025390625,
+                        14.303000000000000824229573481716215610504150390625,
+                        14.3119999999999993889332472463138401508331298828125,
+                        14.3759999999999994457766661071218550205230712890625,
+                        14.038000000000000255795384873636066913604736328125
+                    ],
+                    "test_run_times": [
+                        11.699999999999999289457264239899814128875732421875,
+                        13.1400000000000005684341886080801486968994140625,
+                        14.0999999999999996447286321199499070644378662109375,
+                        14.3800000000000007815970093361102044582366943359375,
+                        14.28999999999999914734871708787977695465087890625,
+                        14.46000000000000085265128291212022304534912109375,
+                        14.42999999999999971578290569595992565155029296875,
+                        14.449999999999999289457264239899814128875732421875,
+                        14.2799999999999993605115378159098327159881591796875,
+                        14.2599999999999997868371792719699442386627197265625,
+                        14.1500000000000003552713678800500929355621337890625,
+                        14.2799999999999993605115378159098327159881591796875,
+                        14.5999999999999996447286321199499070644378662109375,
+                        14.0800000000000000710542735760100185871124267578125,
+                        14.6500000000000003552713678800500929355621337890625,
+                        14.0099999999999997868371792719699442386627197265625,
+                        14.300000000000000710542735760100185871124267578125,
+                        14.3100000000000004973799150320701301097869873046875,
+                        14.3800000000000007815970093361102044582366943359375,
+                        14.03999999999999914734871708787977695465087890625
+                    ]
+                }
+            }
+        }
+    }
+}

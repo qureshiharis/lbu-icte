@@ -1,0 +1,345 @@
+{
+    "title": "windows-test-lzbench",
+    "last_modified": "2024-04-20 19:12:08",
+    "description": "Intel Core i7-7500U testing with a Dell Inspiron 13-5378 [0YNG98] (1.27.0 BIOS) and Intel HD 620 1GB on Microsoft Windows 10 Home Build 19045 via the Phoronix Test Suite.",
+    "systems": {
+        "windows-test-lzbench": {
+            "identifier": "windows-test-lzbench",
+            "hardware": {
+                "Processor": "Intel Core i7-7500U @ 2.90GHz (2 Cores \/ 4 Threads)",
+                "Motherboard": "Dell Inspiron 13-5378 [0YNG98] (1.27.0 BIOS)",
+                "Memory": "1 x 8192 MB 2133MHz HMA81GS6AFR8N-UH",
+                "Disk": "466GB Samsung SSD 860 EVO 500GB",
+                "Graphics": "Intel HD 620 1GB",
+                "Audio": "Intel Display Audio + Realtek Audio",
+                "Network": "TAP-Windows V9"
+            },
+            "software": {
+                "OS": "Microsoft Windows 10 Home Build 19045",
+                "Kernel": "10.0.19045.4239 (x86_64)",
+                "Display Driver": "23.20.16.4973",
+                "Vulkan": "1.0.65",
+                "File-System": "NTFS",
+                "Screen Resolution": "1920x1080"
+            },
+            "user": "Haris",
+            "timestamp": "2024-04-20 18:52:55",
+            "client_version": "10.8.4",
+            "data": {
+                "security": "__user pointer sanitization: Disabled + IBPB: Always + IBRS: Enabled + STIBP: Enabled + KPTI Enabled: Yes + PTE Inversion: Yes + VBS: Disabled"
+            }
+        }
+    },
+    "results": {
+        "a97fff0392e0dc8b06e7492f95d75e65766f23e6": {
+            "identifier": "pts\/lzbench-1.1.1",
+            "title": "lzbench",
+            "app_version": "1.8",
+            "arguments": "-exz,0",
+            "description": "Test: XZ 0 - Process: Compression",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "windows-test-lzbench": {
+                    "value": 14,
+                    "test_run_times": [
+                        97.56000000000000227373675443232059478759765625,
+                        86.400000000000005684341886080801486968994140625,
+                        86.1099999999999994315658113919198513031005859375
+                    ]
+                }
+            }
+        },
+        "1ab5b4ed40c087b99cdeeacac2864e3fc9e296c3": {
+            "identifier": "pts\/lzbench-1.1.1",
+            "title": "lzbench",
+            "app_version": "1.8",
+            "arguments": "-exz,0",
+            "description": "Test: XZ 0 - Process: Decompression",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "windows-test-lzbench": {
+                    "value": 54,
+                    "test_run_times": [
+                        97.56000000000000227373675443232059478759765625,
+                        86.400000000000005684341886080801486968994140625,
+                        86.1099999999999994315658113919198513031005859375
+                    ]
+                }
+            }
+        },
+        "32c63cd3d6f9367ae720a9b9afc31d7ebf02dc32": {
+            "identifier": "pts\/lzbench-1.1.1",
+            "title": "lzbench",
+            "app_version": "1.8",
+            "arguments": "-ezstd,1",
+            "description": "Test: Zstd 1 - Process: Compression",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "windows-test-lzbench": {
+                    "value": 215,
+                    "raw_values": [
+                        216,
+                        212,
+                        216
+                    ],
+                    "test_run_times": [
+                        27.3299999999999982946974341757595539093017578125,
+                        27.53999999999999914734871708787977695465087890625,
+                        27.280000000000001136868377216160297393798828125
+                    ]
+                }
+            }
+        },
+        "6f249b3604d44d4d3f31896bb0653b59dd533a28": {
+            "identifier": "pts\/lzbench-1.1.1",
+            "title": "lzbench",
+            "app_version": "1.8",
+            "arguments": "-ezstd,1",
+            "description": "Test: Zstd 1 - Process: Decompression",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "windows-test-lzbench": {
+                    "value": 356,
+                    "raw_values": [
+                        357,
+                        356,
+                        356
+                    ],
+                    "test_run_times": [
+                        27.3299999999999982946974341757595539093017578125,
+                        27.53999999999999914734871708787977695465087890625,
+                        27.280000000000001136868377216160297393798828125
+                    ]
+                }
+            }
+        },
+        "25c9b4e1e91e600c606af13ee9cfca164a8525fc": {
+            "identifier": "pts\/lzbench-1.1.1",
+            "title": "lzbench",
+            "app_version": "1.8",
+            "arguments": "-ezstd,8",
+            "description": "Test: Zstd 8 - Process: Compression",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "windows-test-lzbench": {
+                    "value": 28,
+                    "raw_values": [
+                        29,
+                        28,
+                        28
+                    ],
+                    "test_run_times": [
+                        45.56000000000000227373675443232059478759765625,
+                        47.75999999999999801048033987171947956085205078125,
+                        46.96000000000000085265128291212022304534912109375
+                    ]
+                }
+            }
+        },
+        "edb61ba9199c6f5934fef86679c889a5f7bfdd5f": {
+            "identifier": "pts\/lzbench-1.1.1",
+            "title": "lzbench",
+            "app_version": "1.8",
+            "arguments": "-ezstd,8",
+            "description": "Test: Zstd 8 - Process: Decompression",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "windows-test-lzbench": {
+                    "value": 365,
+                    "raw_values": [
+                        366,
+                        362,
+                        366
+                    ],
+                    "test_run_times": [
+                        45.56000000000000227373675443232059478759765625,
+                        47.75999999999999801048033987171947956085205078125,
+                        46.96000000000000085265128291212022304534912109375
+                    ]
+                }
+            }
+        },
+        "87df8d5b801ad3bd53e12a1906a9873b94369183": {
+            "identifier": "pts\/lzbench-1.1.1",
+            "title": "lzbench",
+            "app_version": "1.8",
+            "arguments": "-ecrush,0",
+            "description": "Test: Crush 0 - Process: Compression",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "windows-test-lzbench": {
+                    "value": 39,
+                    "test_run_times": [
+                        40.3900000000000005684341886080801486968994140625,
+                        40.31000000000000227373675443232059478759765625,
+                        40.2999999999999971578290569595992565155029296875
+                    ]
+                }
+            }
+        },
+        "128f8170b40bf9f91c0f3e4e77094829ac809e06": {
+            "identifier": "pts\/lzbench-1.1.1",
+            "title": "lzbench",
+            "app_version": "1.8",
+            "arguments": "-ecrush,0",
+            "description": "Test: Crush 0 - Process: Decompression",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "windows-test-lzbench": {
+                    "value": 220,
+                    "raw_values": [
+                        221,
+                        219,
+                        219
+                    ],
+                    "test_run_times": [
+                        40.3900000000000005684341886080801486968994140625,
+                        40.31000000000000227373675443232059478759765625,
+                        40.2999999999999971578290569595992565155029296875
+                    ]
+                }
+            }
+        },
+        "f38647cf6335ade425c0eac6f6df2d7613680603": {
+            "identifier": "pts\/lzbench-1.1.1",
+            "title": "lzbench",
+            "app_version": "1.8",
+            "arguments": "-ebrotli,0",
+            "description": "Test: Brotli 0 - Process: Compression",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "windows-test-lzbench": {
+                    "value": 181,
+                    "test_run_times": [
+                        24.309999999999998721023075631819665431976318359375,
+                        24.300000000000000710542735760100185871124267578125,
+                        24.3299999999999982946974341757595539093017578125
+                    ]
+                }
+            }
+        },
+        "3f13c4be7c50b339286084a06826f68c6931739b": {
+            "identifier": "pts\/lzbench-1.1.1",
+            "title": "lzbench",
+            "app_version": "1.8",
+            "arguments": "-ebrotli,0",
+            "description": "Test: Brotli 0 - Process: Decompression",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "windows-test-lzbench": {
+                    "value": 265,
+                    "test_run_times": [
+                        24.309999999999998721023075631819665431976318359375,
+                        24.300000000000000710542735760100185871124267578125,
+                        24.3299999999999982946974341757595539093017578125
+                    ]
+                }
+            }
+        },
+        "f7bde4847668cfa74d587c36950b7ec182656eba": {
+            "identifier": "pts\/lzbench-1.1.1",
+            "title": "lzbench",
+            "app_version": "1.8",
+            "arguments": "-ebrotli,2",
+            "description": "Test: Brotli 2 - Process: Compression",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "windows-test-lzbench": {
+                    "value": 78,
+                    "test_run_times": [
+                        27.5799999999999982946974341757595539093017578125,
+                        27.469999999999998863131622783839702606201171875,
+                        27.620000000000000994759830064140260219573974609375
+                    ]
+                }
+            }
+        },
+        "b3275b0d8c80227f7222f198278a8d6e1564d846": {
+            "identifier": "pts\/lzbench-1.1.1",
+            "title": "lzbench",
+            "app_version": "1.8",
+            "arguments": "-ebrotli,2",
+            "description": "Test: Brotli 2 - Process: Decompression",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "windows-test-lzbench": {
+                    "value": 317,
+                    "raw_values": [
+                        316,
+                        317,
+                        317
+                    ],
+                    "test_run_times": [
+                        27.5799999999999982946974341757595539093017578125,
+                        27.469999999999998863131622783839702606201171875,
+                        27.620000000000000994759830064140260219573974609375
+                    ]
+                }
+            }
+        },
+        "a481174911c170e0ad2a765ad48b6e015cc7b36e": {
+            "identifier": "pts\/lzbench-1.1.1",
+            "title": "lzbench",
+            "app_version": "1.8",
+            "arguments": "-elibdeflate,1",
+            "description": "Test: Libdeflate 1 - Process: Compression",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "windows-test-lzbench": {
+                    "value": 102,
+                    "test_run_times": [
+                        32.64999999999999857891452847979962825775146484375,
+                        32.56000000000000227373675443232059478759765625,
+                        32.46000000000000085265128291212022304534912109375
+                    ]
+                }
+            }
+        },
+        "32c31601b81a0078b59cf31c4b9a5edfdb2d6ac7": {
+            "identifier": "pts\/lzbench-1.1.1",
+            "title": "lzbench",
+            "app_version": "1.8",
+            "arguments": "-elibdeflate,1",
+            "description": "Test: Libdeflate 1 - Process: Decompression",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "windows-test-lzbench": {
+                    "value": 582,
+                    "test_run_times": [
+                        32.64999999999999857891452847979962825775146484375,
+                        32.56000000000000227373675443232059478759765625,
+                        32.46000000000000085265128291212022304534912109375
+                    ]
+                }
+            }
+        }
+    }
+}

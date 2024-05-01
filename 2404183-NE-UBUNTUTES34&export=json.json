@@ -1,0 +1,168 @@
+{
+    "title": "ubuntu-test-stream",
+    "last_modified": "2024-04-18 19:35:38",
+    "description": "Intel Core i7-7500U testing with a Dell 0YNG98 (1.27.0 BIOS) and Intel HD 620 KBL GT2 3GB on Ubuntu 20.04 via the Phoronix Test Suite.",
+    "systems": {
+        "ubuntu-test-stream": {
+            "identifier": "ubuntu-test-stream",
+            "hardware": {
+                "Processor": "Intel Core i7-7500U @ 3.50GHz (2 Cores \/ 4 Threads)",
+                "Motherboard": "Dell 0YNG98 (1.27.0 BIOS)",
+                "Chipset": "Intel Xeon E3-1200 v6\/7th",
+                "Memory": "8GB",
+                "Disk": "500GB Samsung SSD 860",
+                "Graphics": "Intel HD 620 KBL GT2 3GB (1050MHz)",
+                "Audio": "Realtek ALC3253",
+                "Network": "Intel 3165"
+            },
+            "software": {
+                "OS": "Ubuntu 20.04",
+                "Kernel": "5.4.0-176-generic (x86_64)",
+                "Desktop": "GNOME Shell 3.36.9",
+                "Display Server": "X Server 1.20.13",
+                "OpenGL": "4.6 Mesa 21.2.6",
+                "Vulkan": "1.2.182",
+                "Compiler": "GCC 9.4.0",
+                "File-System": "ext4",
+                "Screen Resolution": "1920x1080"
+            },
+            "user": "haris",
+            "timestamp": "2024-04-18 19:21:05",
+            "client_version": "10.8.4",
+            "data": {
+                "compiler-configuration": "--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-targets=nvptx-none=\/build\/gcc-9-9QDOt0\/gcc-9-9.4.0\/debian\/tmp-nvptx\/usr,hsa --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v",
+                "cpu-scaling-governor": "intel_pstate powersave (EPP: balance_performance)",
+                "cpu-microcode": "0xf4",
+                "cpu-thermald": "1.9.1",
+                "kernel-extra-details": "Transparent Huge Pages: madvise",
+                "environment-variables": "NVM_CD_FLAGS=",
+                "security": "gather_data_sampling: Mitigation of Microcode + itlb_multihit: KVM: Mitigation of Split huge pages + l1tf: Mitigation of PTE Inversion; VMX: conditional cache flushes SMT vulnerable + mds: Mitigation of Clear buffers; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable + retbleed: Mitigation of IBRS + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of IBRS IBPB: conditional STIBP: conditional RSB filling PBRSB-eIBRS: Not affected + srbds: Mitigation of Microcode + tsx_async_abort: Not affected"
+            }
+        }
+    },
+    "results": {
+        "7181cdd547166bcb80a442d047862e79a2c03b53": {
+            "identifier": "pts\/stream-1.3.4",
+            "title": "Stream",
+            "app_version": "2013-01-17",
+            "arguments": "Copy",
+            "description": "Type: Copy",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "ubuntu-test-stream": {
+                    "value": 12642,
+                    "raw_values": [
+                        12645,
+                        12646.5,
+                        12642.29999999999927240423858165740966796875,
+                        12640,
+                        12636.100000000000363797880709171295166015625
+                    ],
+                    "test_run_times": [
+                        76.75,
+                        76.7699999999999960209606797434389591217041015625,
+                        76.93000000000000682121026329696178436279296875,
+                        78.4899999999999948840923025272786617279052734375,
+                        80.3900000000000005684341886080801486968994140625
+                    ],
+                    "details": {
+                        "compiler-options": {
+                            "compiler-type": "CC",
+                            "compiler": "gcc",
+                            "compiler-options": "-O3 -march=native -fopenmp"
+                        }
+                    }
+                }
+            }
+        },
+        "ef693518e90e9b655e7480ebadc7e438792cf83d": {
+            "identifier": "pts\/stream-1.3.4",
+            "title": "Stream",
+            "app_version": "2013-01-17",
+            "arguments": "Scale",
+            "description": "Type: Scale",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "ubuntu-test-stream": {
+                    "value": 9228.100000000000363797880709171295166015625,
+                    "raw_values": [
+                        9231.29999999999927240423858165740966796875,
+                        9227.100000000000363797880709171295166015625,
+                        9227,
+                        9227.5,
+                        9227.5
+                    ],
+                    "details": {
+                        "compiler-options": {
+                            "compiler-type": "CC",
+                            "compiler": "gcc",
+                            "compiler-options": "-O3 -march=native -fopenmp"
+                        }
+                    }
+                }
+            }
+        },
+        "d4d018e082a62d26d548128121d15121dc6ac83e": {
+            "identifier": "pts\/stream-1.3.4",
+            "title": "Stream",
+            "app_version": "2013-01-17",
+            "arguments": "Triad",
+            "description": "Type: Triad",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "ubuntu-test-stream": {
+                    "value": 10585.100000000000363797880709171295166015625,
+                    "raw_values": [
+                        10612,
+                        10615.29999999999927240423858165740966796875,
+                        10615.20000000000072759576141834259033203125,
+                        10617.20000000000072759576141834259033203125,
+                        10465.70000000000072759576141834259033203125
+                    ],
+                    "details": {
+                        "compiler-options": {
+                            "compiler-type": "CC",
+                            "compiler": "gcc",
+                            "compiler-options": "-O3 -march=native -fopenmp"
+                        }
+                    }
+                }
+            }
+        },
+        "8448419f59d2cfb8a8fb91a681d20af16b05e653": {
+            "identifier": "pts\/stream-1.3.4",
+            "title": "Stream",
+            "app_version": "2013-01-17",
+            "arguments": "Add",
+            "description": "Type: Add",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "ubuntu-test-stream": {
+                    "value": 10612.899999999999636202119290828704833984375,
+                    "raw_values": [
+                        10615.29999999999927240423858165740966796875,
+                        10629.399999999999636202119290828704833984375,
+                        10616.29999999999927240423858165740966796875,
+                        10622.399999999999636202119290828704833984375,
+                        10581.29999999999927240423858165740966796875
+                    ],
+                    "details": {
+                        "compiler-options": {
+                            "compiler-type": "CC",
+                            "compiler": "gcc",
+                            "compiler-options": "-O3 -march=native -fopenmp"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

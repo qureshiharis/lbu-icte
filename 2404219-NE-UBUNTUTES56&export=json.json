@@ -1,0 +1,330 @@
+{
+    "title": "ubuntu-test-iozone",
+    "last_modified": "2024-04-21 18:36:01",
+    "description": "Intel Core i7-7500U testing with a Dell 0YNG98 (1.27.0 BIOS) and Intel HD 620 KBL GT2 3GB on Ubuntu 20.04 via the Phoronix Test Suite.",
+    "systems": {
+        "ubuntu-test-iozone": {
+            "identifier": "ubuntu-test-iozone",
+            "hardware": {
+                "Processor": "Intel Core i7-7500U @ 3.50GHz (2 Cores \/ 4 Threads)",
+                "Motherboard": "Dell 0YNG98 (1.27.0 BIOS)",
+                "Chipset": "Intel Xeon E3-1200 v6\/7th",
+                "Memory": "8GB",
+                "Disk": "500GB Samsung SSD 860",
+                "Graphics": "Intel HD 620 KBL GT2 3GB (1050MHz)",
+                "Audio": "Realtek ALC3253",
+                "Network": "Intel 3165"
+            },
+            "software": {
+                "OS": "Ubuntu 20.04",
+                "Kernel": "5.4.0-176-generic (x86_64)",
+                "Desktop": "GNOME Shell 3.36.9",
+                "Display Server": "X Server 1.20.13",
+                "OpenGL": "4.6 Mesa 21.2.6",
+                "Vulkan": "1.2.182",
+                "Compiler": "GCC 9.4.0",
+                "File-System": "ext4",
+                "Screen Resolution": "1920x1080"
+            },
+            "user": "haris",
+            "timestamp": "2024-04-21 18:27:00",
+            "client_version": "10.8.4",
+            "data": {
+                "compiler-configuration": "--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-targets=nvptx-none=\/build\/gcc-9-9QDOt0\/gcc-9-9.4.0\/debian\/tmp-nvptx\/usr,hsa --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v",
+                "disk-scheduler": "MQ-DEADLINE",
+                "disk-mount-options": "relatime,rw",
+                "disk-details": "Block Size: 4096",
+                "cpu-scaling-governor": "intel_pstate powersave (EPP: balance_performance)",
+                "cpu-microcode": "0xf4",
+                "cpu-thermald": "1.9.1",
+                "kernel-extra-details": "Transparent Huge Pages: madvise",
+                "environment-variables": "NVM_CD_FLAGS=",
+                "security": "gather_data_sampling: Mitigation of Microcode + itlb_multihit: KVM: Mitigation of Split huge pages + l1tf: Mitigation of PTE Inversion; VMX: conditional cache flushes SMT vulnerable + mds: Mitigation of Clear buffers; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Mitigation of Clear buffers; SMT vulnerable + retbleed: Mitigation of IBRS + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of IBRS IBPB: conditional STIBP: conditional RSB filling PBRSB-eIBRS: Not affected + srbds: Mitigation of Microcode + tsx_async_abort: Not affected"
+            }
+        }
+    },
+    "results": {
+        "1db208844b00278067a3c04022e8c9ffb264975a": {
+            "identifier": "system\/iozone-1.9.4",
+            "title": "IOzone",
+            "app_version": "3.465",
+            "arguments": "-r 1m -s 512M -i0 -i1 #READ",
+            "description": "Record Size: 1MB - File Size: 512MB - Disk Test: Read Performance",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "ubuntu-test-iozone": {
+                    "value": 5970.3000000000001818989403545856475830078125,
+                    "raw_values": [
+                        6111.173828125,
+                        5959.0439453125,
+                        5840.6826171875
+                    ],
+                    "test_run_times": [
+                        2.770000000000000017763568394002504646778106689453125,
+                        2.779999999999999804600747665972448885440826416015625,
+                        2.859999999999999875655021241982467472553253173828125
+                    ],
+                    "details": {
+                        "compiler-options": {
+                            "compiler-type": "CC",
+                            "compiler": "gcc",
+                            "compiler-options": "-O3"
+                        }
+                    }
+                }
+            }
+        },
+        "79ffb778aa141feab3540c2c619361d0476a7ce6": {
+            "identifier": "system\/iozone-1.9.4",
+            "title": "IOzone",
+            "app_version": "3.465",
+            "arguments": "-r 4k -s 512M -i0 -i1 #READ",
+            "description": "Record Size: 4Kb - File Size: 512MB - Disk Test: Read Performance",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "ubuntu-test-iozone": {
+                    "value": 2769.44000000000005456968210637569427490234375,
+                    "raw_values": [
+                        2760.9111328125,
+                        2794.2998046875,
+                        2753.099609375
+                    ],
+                    "test_run_times": [
+                        3.180000000000000159872115546022541821002960205078125,
+                        3.20000000000000017763568394002504646778106689453125,
+                        3.220000000000000195399252334027551114559173583984375
+                    ],
+                    "details": {
+                        "compiler-options": {
+                            "compiler-type": "CC",
+                            "compiler": "gcc",
+                            "compiler-options": "-O3"
+                        }
+                    }
+                }
+            }
+        },
+        "13015d8b6fe85ccc7157994f52e3a4bebc98256c": {
+            "identifier": "system\/iozone-1.9.4",
+            "title": "IOzone",
+            "app_version": "3.465",
+            "arguments": "-r 1m -s 512M -i0 #WRITE",
+            "description": "Record Size: 1MB - File Size: 512MB - Disk Test: Write Performance",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "ubuntu-test-iozone": {
+                    "value": 362.3500000000000227373675443232059478759765625,
+                    "raw_values": [
+                        379.091796875,
+                        380.0078125,
+                        335.62109375,
+                        388.1318359375,
+                        388.638671875,
+                        393.4287109375,
+                        297.2421875,
+                        392.314453125,
+                        264.7255859375,
+                        347.46484375,
+                        392.6982421875,
+                        388.8603515625
+                    ],
+                    "test_run_times": [
+                        2.6699999999999999289457264239899814128875732421875,
+                        3.25,
+                        2.859999999999999875655021241982467472553253173828125,
+                        2.640000000000000124344978758017532527446746826171875,
+                        2.6699999999999999289457264239899814128875732421875,
+                        3.0800000000000000710542735760100185871124267578125,
+                        3.04999999999999982236431605997495353221893310546875,
+                        3,
+                        3.839999999999999857891452847979962825775146484375,
+                        2.810000000000000053290705182007513940334320068359375,
+                        2.62999999999999989341858963598497211933135986328125,
+                        2.649999999999999911182158029987476766109466552734375
+                    ],
+                    "details": {
+                        "compiler-options": {
+                            "compiler-type": "CC",
+                            "compiler": "gcc",
+                            "compiler-options": "-O3"
+                        }
+                    }
+                }
+            }
+        },
+        "a450da9f5f95d5d4f7fae57835f6c08791e16711": {
+            "identifier": "system\/iozone-1.9.4",
+            "title": "IOzone",
+            "app_version": "3.465",
+            "arguments": "-r 4k -s 512M -i0 #WRITE",
+            "description": "Record Size: 4Kb - File Size: 512MB - Disk Test: Write Performance",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "ubuntu-test-iozone": {
+                    "value": 285.220000000000027284841053187847137451171875,
+                    "raw_values": [
+                        288.5283203125,
+                        251.16796875,
+                        343.0263671875,
+                        300.8984375,
+                        257.0546875,
+                        361.841796875,
+                        278.810546875,
+                        259.197265625,
+                        255.2734375,
+                        269.2802734375,
+                        305.7646484375,
+                        262.255859375,
+                        362.13671875,
+                        223.0439453125,
+                        259.9755859375
+                    ],
+                    "test_run_times": [
+                        3.79999999999999982236431605997495353221893310546875,
+                        4.20999999999999996447286321199499070644378662109375,
+                        2.910000000000000142108547152020037174224853515625,
+                        3.70999999999999996447286321199499070644378662109375,
+                        3.430000000000000159872115546022541821002960205078125,
+                        2.8300000000000000710542735760100185871124267578125,
+                        3.810000000000000053290705182007513940334320068359375,
+                        4.019999999999999573674358543939888477325439453125,
+                        4.0099999999999997868371792719699442386627197265625,
+                        3.3300000000000000710542735760100185871124267578125,
+                        3.899999999999999911182158029987476766109466552734375,
+                        3.37999999999999989341858963598497211933135986328125,
+                        3.29999999999999982236431605997495353221893310546875,
+                        4.29999999999999982236431605997495353221893310546875,
+                        4.30999999999999960920149533194489777088165283203125
+                    ],
+                    "details": {
+                        "compiler-options": {
+                            "compiler-type": "CC",
+                            "compiler": "gcc",
+                            "compiler-options": "-O3"
+                        }
+                    }
+                }
+            }
+        },
+        "78468341fc3474165d1e44164ddfbd0f1b8c0f6c": {
+            "identifier": "system\/iozone-1.9.4",
+            "title": "IOzone",
+            "app_version": "3.465",
+            "arguments": "-r 64k -s 512M -i0 -i1 #READ",
+            "description": "Record Size: 64Kb - File Size: 512MB - Disk Test: Read Performance",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "ubuntu-test-iozone": {
+                    "value": 5321.3699999999998908606357872486114501953125,
+                    "raw_values": [
+                        4852.666015625,
+                        5745.1328125,
+                        5125.2861328125,
+                        5786.68359375,
+                        6527.03125,
+                        5266.56640625,
+                        5063.04296875,
+                        4931.19140625,
+                        5265.4814453125,
+                        5944.9892578125,
+                        5093.5205078125,
+                        4978.5654296875,
+                        4938.2216796875,
+                        5139.4287109375,
+                        5162.7431640625
+                    ],
+                    "test_run_times": [
+                        5.21999999999999975131004248396493494510650634765625,
+                        2.95000000000000017763568394002504646778106689453125,
+                        3.680000000000000159872115546022541821002960205078125,
+                        3.100000000000000088817841970012523233890533447265625,
+                        3.62999999999999989341858963598497211933135986328125,
+                        4.9199999999999999289457264239899814128875732421875,
+                        4.019999999999999573674358543939888477325439453125,
+                        4.30999999999999960920149533194489777088165283203125,
+                        6.70000000000000017763568394002504646778106689453125,
+                        3.2599999999999997868371792719699442386627197265625,
+                        3.3300000000000000710542735760100185871124267578125,
+                        4.28000000000000024868995751603506505489349365234375,
+                        4.95999999999999996447286321199499070644378662109375,
+                        4.19000000000000039079850466805510222911834716796875,
+                        4.5
+                    ],
+                    "details": {
+                        "compiler-options": {
+                            "compiler-type": "CC",
+                            "compiler": "gcc",
+                            "compiler-options": "-O3"
+                        }
+                    }
+                }
+            }
+        },
+        "fac8fd89d24c20841032aa6fd2191732fd3e7f45": {
+            "identifier": "system\/iozone-1.9.4",
+            "title": "IOzone",
+            "app_version": "3.465",
+            "arguments": "-r 64k -s 512M -i0 #WRITE",
+            "description": "Record Size: 64Kb - File Size: 512MB - Disk Test: Write Performance",
+            "scale": "MB\/s",
+            "proportion": "HIB",
+            "display_format": "BAR_GRAPH",
+            "results": {
+                "ubuntu-test-iozone": {
+                    "value": 284.16000000000002501110429875552654266357421875,
+                    "raw_values": [
+                        263.5830078125,
+                        335.4912109375,
+                        355.298828125,
+                        257.908203125,
+                        274.58203125,
+                        273.5771484375,
+                        272.71484375,
+                        258.42578125,
+                        331.18359375,
+                        328.185546875,
+                        272.8310546875,
+                        273.837890625,
+                        217.125,
+                        273.9130859375,
+                        273.671875
+                    ],
+                    "test_run_times": [
+                        5.910000000000000142108547152020037174224853515625,
+                        2.859999999999999875655021241982467472553253173828125,
+                        4.589999999999999857891452847979962825775146484375,
+                        4.87000000000000010658141036401502788066864013671875,
+                        4.4900000000000002131628207280300557613372802734375,
+                        3.8300000000000000710542735760100185871124267578125,
+                        4.480000000000000426325641456060111522674560546875,
+                        5.07000000000000028421709430404007434844970703125,
+                        2.87999999999999989341858963598497211933135986328125,
+                        3.45999999999999996447286321199499070644378662109375,
+                        4.0800000000000000710542735760100185871124267578125,
+                        3.839999999999999857891452847979962825775146484375,
+                        4.2599999999999997868371792719699442386627197265625,
+                        4.4199999999999999289457264239899814128875732421875,
+                        5.62000000000000010658141036401502788066864013671875
+                    ],
+                    "details": {
+                        "compiler-options": {
+                            "compiler-type": "CC",
+                            "compiler": "gcc",
+                            "compiler-options": "-O3"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
